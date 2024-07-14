@@ -4,7 +4,8 @@ Un simple jeu de Snake développé en React Native avec Expo et Tailwind CSS.
 
 ## Capture d'écran
 
-![Capture d'écran du jeu Snake](/screenshot.jpg)
+<img src="screenshot.jpg?raw=true" alt="Capture d'écran du jeu Snake">
+<!-- ![Capture d'écran du jeu Snake](/screenshot.jpg) -->
 
 ## Prérequis
 

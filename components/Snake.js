@@ -9,7 +9,7 @@ const Snake = ({ snakeDots }) => {
                     left: `${dot[0]}%`,
                     top: `${dot[1]}%`,
                 };
-                return <View key={index} className="bg-green-500 absolute w-4 h-4" style={style} />;
+                return <View key={index} className="bg-green-600 absolute w-5 h-5" style={style} />;
             })}
         </>
     );

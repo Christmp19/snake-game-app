@@ -7,7 +7,7 @@ const Food = ({ position }) => {
         top: `${position[1]}%`,
     };
 
-    return <Text style={style} className="absolute text-xl">🍎</Text>;
+    return <Text style={style} className="absolute text-2xl">🍎</Text>;
 };
 
 export default Food;

@@ -1,57 +1,94 @@
-# My Universal React Project
+# Snake Game en React Native
 
-<!-- <table>
-  <tr>
-    <td align="center">
-      <img src="cover.png?raw=true" alt="Template Screenshot" width="300">
-    </td>
-    <td align="center">
-      <img src="cover2.png?raw=true" alt="Template Screenshot" width="300">
-    </td>
-    <td align="center">
-      <img src="cover3.png?raw=true" alt="Template Screenshot" width="300">
-    </td>
-  </tr>
-</table> -->
+Un simple jeu de Snake développé en React Native avec Expo et Tailwind CSS.
 
-<p>
-  <!-- iOS -->
-  <a href="https://itunes.apple.com/app/apple-store/id982107779">
-    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  </a>
-  <!-- Android -->
-  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
-    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  </a>
-  <!-- Web -->
-  <a href="https://docs.expo.dev/workflow/web/">
-    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-  </a>
-</p>
+## Capture d'écran
 
-## 🚀 How to use
+![Capture d'écran du jeu Snake](./screenshot.jpg)
 
-- Install packages with `yarn` or `npm install`.
-  - If you have native iOS code run `npx pod-install`
-- Run `yarn start` or `npm run start` to start the bundler.
-- Open the project in a React runtime to try it:
-  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
-  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
-  - Web: Any web browser
+## Prérequis
 
-## Running/Modifying Native Code
+Avant de commencer, assurez-vous d'avoir installé les éléments suivants :
 
-You can generate native iOS and Android projects from your Expo config file (**app.json**/ **app.config.js**) by runnning `npx expo prebuild`. These native projects can then be compiled and run via XCode and Android Studio.
+- Node.js
 
-> 💡 Learn more about [native code in Expo](https://docs.expo.dev/workflow/customizing/)
+## Installation
 
-## Publishing
+1. Clonez le dépôt :
+    ```sh
+    git clone https://github.com/Christmp19/snake-game-app.git
+    ```
+2. Accédez au répertoire du projet :
+    ```sh
+    cd snake-game-app
+    ```
+3. Installez les dépendances :
+    ```sh
+    npm install
+    ```
+    or
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+    ```sh
+    yarn install
+    ```
 
-## 📝 Notes
+## Lancement du Jeu
 
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
+1. Démarrez le projet Expo :
+    ```sh
+    expo start
+    ```
+    or
+
+    ```sh
+    yarn start
+    ```
+2. Scannez le code QR avec l'application Expo Go sur votre appareil mobile, ou lancez l'émulateur de votre choix.
+
+## Règles du Jeu
+
+- Le jeu commence en appuyant sur le bouton "▶️".
+- Utilisez les gestes de glissement pour diriger le serpent (haut, bas, gauche, droite).
+- Mangez la nourriture pour grandir et augmenter votre score de 10 points.
+- Si le serpent touche les bords de l'écran ou se mord lui-même, la partie est terminée.
+
+## Commandes Disponibles
+
+- **Play/Pause** : Appuyez sur le bouton "▶️/⏸" pour démarrer ou mettre en pause le jeu.
+- **Reset** : Appuyez sur le bouton "🔄️" pour réinitialiser le jeu à tout moment.
+
+## Structure du Projet
+
+- `Snake.js` : Composant qui représente le serpent.
+- `Food.js` : Composant qui représente la nourriture.
+- `Game.js` : Composant principal qui contient la logique du jeu et assemble le serpent et la nourriture.
+
+## Dépendances
+
+- React Native
+- Expo
+- React Native Gesture Handler
+- Tailwind CSS pour les styles
+
+## Contribution
+
+Les contributions sont les bienvenues. Vous pouvez proposer des modifications en créant une nouvelle branche et en soumettant une pull request.
+
+1. Créez une branche feature :
+    ```sh
+    git checkout -b feature/nouvelle-feature
+    ```
+2. Effectuez vos modifications et committez :
+    ```sh
+    git commit -m "Ajout d'une nouvelle fonctionnalité"
+    ```
+3. Poussez votre branche :
+    ```sh
+    git push origin feature/nouvelle-feature
+    ```
+4. Ouvrez une pull request.
+
+
+---
+
+Bon jeu et amusez-vous bien !
